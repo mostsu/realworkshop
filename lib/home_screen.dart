@@ -47,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
       onPressed: () async {
         //มี async แต่ไม่มี await ก็ได้ แต่ถ้ามี await จะต้องมี async (ใช้เพื่อรับค่ากลับมาจาก class อื่นๆ)
         var response = await Navigator.push(context,
-            MaterialPageRoute(builder: (context) => AddScreen("ChaiananSSS")));
+            MaterialPageRoute(builder: (context) => AddScreen("Chaianan")));
 
         if (response != null) {
           print(response["ID"] ?? "null"); //short if
